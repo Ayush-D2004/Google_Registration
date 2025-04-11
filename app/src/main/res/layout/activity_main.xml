@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="?attr/actionBarSize"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/signuptitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/register"
+        android:textSize="50sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        tools:ignore="UnusedAttribute" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signuptitle"
+        android:layout_marginTop="30dp"
+        android:autofillHints="username"
+        android:inputType="text"
+        android:hint="@string/username"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:layout_margin="10dp"
+        android:padding="30dp"
+        android:drawableStart="@drawable/baseline_person_24"
+        android:drawablePadding="20dp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username"
+        android:layout_marginTop="20dp"
+        android:autofillHints="password"
+        android:inputType="textPassword"
+        android:hint="@string/password"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:layout_margin="10dp"
+        android:padding="30dp"
+        android:drawableStart="@drawable/baseline_password_24"
+        android:drawablePadding="20dp" />
+
+    <LinearLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="50dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/signupbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_up"
+            android:textSize="25sp"
+            android:backgroundTint="#6593C9"
+            android:layout_marginEnd="20dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/signinbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_in"
+            android:textSize="25sp"
+            android:backgroundTint="#6593C9" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/socialicons"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:text="@string/or_sign_up_with"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:id="@+id/socialicons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="40dp">
+
+        <ImageView
+            android:id="@+id/google_icon"
+            android:contentDescription="@string/google"
+            android:src="@drawable/google_icon"
+            android:layout_height="48dp"
+            android:layout_width="48dp"
+            android:layout_margin="20dp"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <ImageView
+            android:id="@+id/microsoft_icon"
+            android:contentDescription="@string/microsoft"
+            android:src="@drawable/microsoft_icon"
+            android:layout_height="48dp"
+            android:layout_width="48dp"
+            android:layout_margin="20dp"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <ImageView
+            android:id="@+id/facebook_icon"
+            android:contentDescription="@string/facebook"
+            android:src="@drawable/fb_icon"
+            android:layout_height="48dp"
+            android:layout_width="48dp"
+            android:layout_margin="20dp"
+            android:clickable="true"
+            android:focusable="true" />
+    </LinearLayout>
+</RelativeLayout>

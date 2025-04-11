@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:paddingTop="?attr/actionBarSize">
+
+    <TextView
+        android:id="@+id/additionalInfoTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/additional_info"
+        android:textSize="40sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:id="@+id/fullName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/additionalInfoTitle"
+        android:layout_marginTop="30dp"
+        android:hint="@string/full_name"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:layout_margin="10dp"
+        android:padding="30dp"
+        android:drawableStart="@drawable/baseline_person_24"
+        android:drawablePadding="20dp" />
+
+    <EditText
+        android:id="@+id/phoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fullName"
+        android:layout_marginTop="20dp"
+        android:hint="@string/phone_number"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:inputType="phone"
+        android:layout_margin="10dp"
+        android:padding="30dp"
+        android:drawableStart="@drawable/baseline_phone_24"
+        android:drawablePadding="20dp" />
+
+    <EditText
+        android:id="@+id/country"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phoneNumber"
+        android:layout_marginTop="20dp"
+        android:hint="@string/country"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:layout_margin="10dp"
+        android:padding="30dp"
+        android:drawableStart="@drawable/baseline_location_on_24"
+        android:drawablePadding="20dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/continueButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/continue_text"
+        android:textSize="25sp"
+        android:layout_below="@id/country"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#6593C9"
+        android:layout_marginTop="50dp" />
+
+</RelativeLayout> 
